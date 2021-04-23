@@ -23,8 +23,8 @@ namespace CoinFlipConsole
             Console.Write("Number of flips: ");
             string numberOfFlipsString = Console.ReadLine();
 
-            long numberOfFlips = 0;
-            if(Int64.TryParse(numberOfFlipsString, out numberOfFlips))
+            ulong numberOfFlips = 0;
+            if(UInt64.TryParse(numberOfFlipsString, out numberOfFlips))
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Start flipping!");

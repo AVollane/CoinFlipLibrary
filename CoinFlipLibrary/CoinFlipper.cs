@@ -22,7 +22,7 @@ namespace CoinFlipLibrary
         /// <param name="random"></param>
         /// <param name="repetitions"></param>
         /// <returns>Array of boolean values. True is heads, false is tails</returns>
-        public static async Task<bool[]> FlipRepeatedlyAsync(Random random,long repetitions)
+        public static async Task<bool[]> FlipRepeatedlyAsync(Random random, ulong repetitions)
         {
             // Create and run another task
             return await Task.Run(() =>
@@ -31,7 +31,7 @@ namespace CoinFlipLibrary
                 bool[] coinFlipResults = new bool[repetitions];
 
                 // Saves flipping results
-                for (int i = 0; i < repetitions; i++)
+                for (ulong i = 0; i < repetitions; i++)
                     coinFlipResults[i] = Flip(random);
 
                 return coinFlipResults;
@@ -43,11 +43,11 @@ namespace CoinFlipLibrary
         /// <param name="random"></param>
         /// <param name="repetitions"></param>
         /// <returns>Array of boolean values. True is heads, false is tails</returns>
-        public static bool[] FlipRepeatedly(Random random, long repetitions)
+        public static bool[] FlipRepeatedly(Random random, ulong repetitions)
         {
             bool[] coinFlipResults = new bool[repetitions];
 
-            for (int i = 0; i < repetitions; i++)
+            for (ulong i = 0; i < repetitions; i++)
                 coinFlipResults[i] = Flip(random);
 
             return coinFlipResults;

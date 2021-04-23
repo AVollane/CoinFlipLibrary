@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinFlipLibrary", "CoinFlipLibrary\CoinFlipLibrary.csproj", "{62562640-53FC-4BA6-8F29-6956524CEB7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoinFlipLibrary", "CoinFlipLibrary\CoinFlipLibrary.csproj", "{62562640-53FC-4BA6-8F29-6956524CEB7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinFlipConsole", "CoinFlipConsole\CoinFlipConsole.csproj", "{F351312F-4C80-47E2-9408-C5778B696A14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoinFlipConsole", "CoinFlipConsole\CoinFlipConsole.csproj", "{F351312F-4C80-47E2-9408-C5778B696A14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinFlipTest", "CoinFlipTest\CoinFlipTest.csproj", "{C503DF99-4F86-4A52-92C1-665D18760B71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F351312F-4C80-47E2-9408-C5778B696A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F351312F-4C80-47E2-9408-C5778B696A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F351312F-4C80-47E2-9408-C5778B696A14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C503DF99-4F86-4A52-92C1-665D18760B71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C503DF99-4F86-4A52-92C1-665D18760B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C503DF99-4F86-4A52-92C1-665D18760B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C503DF99-4F86-4A52-92C1-665D18760B71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
