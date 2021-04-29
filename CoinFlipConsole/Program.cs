@@ -53,24 +53,34 @@ namespace CoinFlipConsole
                     result = CoinFlipper.Flip(random);
                 }
 
-                Console.WriteLine("\nWould you like to save results? y/n");
+                if (numberOfFlips > 1)
+                {
 
-                string usersAnswerToSaver = Console.ReadLine();
+                    Console.WriteLine("\nWould you like to save results? y/n");
 
-                switch(usersAnswerToSaver){
-                    case "y":
-                        coinFlipResults = PrepareResults(results);
-                        SaveResultsToFile(coinFlipResults);
-                        break;
-                    case "Y":
-                        coinFlipResults = PrepareResults(results);
-                        SaveResultsToFile(coinFlipResults);
-                        break;
-                    default:
-                        Console.WriteLine("Ok! Without saving");
-                        break;
+                    string usersAnswerToSaver = Console.ReadLine();
+
+                    switch (usersAnswerToSaver)
+                    {
+                        case "y":
+                            coinFlipResults = PrepareResults(results);
+                            SaveResultsToFile(coinFlipResults);
+                            break;
+                        case "Y":
+                            coinFlipResults = PrepareResults(results);
+                            SaveResultsToFile(coinFlipResults);
+                            break;
+                        default:
+                            Console.WriteLine("Ok! Without saving");
+                            break;
+                    }
                 }
-
+                else{
+                    string headOrTail = String.Empty;
+                    if(result) headOrTail = "head";
+                    else headOrTail = "tail";
+                    Console.WriteLine($"Your result is {headOrTail}");
+                }
 
             }
             else
